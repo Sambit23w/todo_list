@@ -62,9 +62,13 @@ export default class Todo extends Component {
                                 <Card.Body>
                                     <Card.Text>
                                         <Container>
-                                            <Row>
-                                                <input value={this.state.task} onChange={this.task} placeholder="Add Task" required />
-                                                <Button disabled={this.state.task === "" ? true : false} variant="success" onClick={this.add}>Add</Button>
+                                             <Row>
+                                                <Col>
+                                                    <input value={this.state.task} onChange={this.task} placeholder="Add Task" required />
+                                                    <Button disabled={this.state.task === "" ? true : false} variant="success" onClick={this.add}>Add</Button>
+
+                                                </Col>
+                                                
 
                                             </Row>
                                         </Container>
